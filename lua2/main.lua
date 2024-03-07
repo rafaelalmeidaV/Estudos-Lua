@@ -16,5 +16,6 @@ function love.draw()
     c1 = love.math.newBezierCurve(p1)
     c2 = love.math.newBezierCurve(p2)
     c3 = love.math.newBezierCurve(p3)
+    love.graphics.line(c1:render())
 
 end
