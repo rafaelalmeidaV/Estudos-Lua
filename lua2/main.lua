@@ -11,4 +11,10 @@ function love.draw()
     love.graphics.line(p1)
     love.graphics.line(p2)
     love.graphics.line(p3)
+    -- desenhar as curvas com os mesmos pontos na cor vermelha
+    love.graphics.setColor(1, 0, 0, 1)
+    c1 = love.math.newBezierCurve(p1)
+    c2 = love.math.newBezierCurve(p2)
+    c3 = love.math.newBezierCurve(p3)
+
 end
